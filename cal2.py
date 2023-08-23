@@ -4,6 +4,7 @@ import threading
 import time
 import pyperclip
 import matplotlib
+import matplotlib.pyplot as plt
 from sympy.integrals.manualintegrate import integral_steps
 from sympy import *
 from sympy.plotting import plot
@@ -319,7 +320,7 @@ btn4.pack(side='left')
 label = tk.Label(mainframe)
 label.pack()
 
-fig = matplotlib.figure.Figure(figsize=(12.8, 7.2))
+fig = plt.figure(figsize=(12.8, 7.2))
 ax = fig.add_subplot(frameon=False)
 
 canvas = FigureCanvasTkAgg(fig, root)
